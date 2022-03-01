@@ -126,7 +126,7 @@ if __name__ == '__main__':
                     server = smtplib.SMTP('smtp.gmail.com', 465)
                     server.ehlo()
                     server.starttls()
-                    server.login("charansai.scs@gmail.com", 'charan000')
+                    server.login("charansai.scs@gmail.com", ' ')
                     server.sendmail('ssrajinivas35@gmail.com', "srinu", content)
                     server.close()
                     speak('Email sent!')
@@ -161,12 +161,7 @@ if __name__ == '__main__':
         elif 'where you born' in query or 'who is your father' in query or 'who develaped you' in query:         
             speak('I was created by a magician named charan, in india,')
         elif 'how are you' in query:
-            speak('i am fine,thank you')
-        elif 'love you' in query:
-            replies = ['I love you too.','You are looking for love in the wrong place.']
-            speak(random.choice(replies))
-        elif 'marry me' in query:
-            speak('I have been receiving a lot of marriage proposals recently.') 
+            speak('i am fine,thank you') 
 
         elif 'hello' in query:
             speak('Hello Sir')
